@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="../static/images/logo.png" type="image/x-icon">
+    <meta name="description" content="">
+
+ 
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../static/parallax/jarallax.css">
+    <link rel="stylesheet" href="../static/dropdown/css/style.css">
+    <link rel="stylesheet" href="../static/socicon/css/styles.css">
+    <link rel="stylesheet" href="../static/theme/css/style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Syne:400,500,600,700,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne:400,500,600,700,800&display=swap"></noscript>
+    <link rel="preload" as="style" href="../static/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="../static/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+
+</head>
+
+<body>
+
+    <section data-bs-version="5.1" class="menu menu1 cid-sMGxGLFVZ2" once="menu" id="menu3-0">
+
+
+        <nav class="navbar navbar-dropdown navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="layout-container">
+                    <div class="navbar-brand">
+
+                        <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="#">JournalM5</a></span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                            <li class="nav-item"><a class="nav-link link text-black display-7" href="/index">
+                            HOME</a></li>
+                            <li class="nav-item"><a class="nav-link link text-black display-7" href="/bookbuy">VIEW BOOKS</a>
+                            </li>
+                            {% if user_id %}
+                            <li class="nav-item"><a class="nav-link link text-black display-7" href="/logout">LOG OUT</a>
+                            </li>              
+                            {% else %}
+                            <li class="nav-item"><a class="nav-link link text-black display-7" href="/log">LOG IN</a>
+                            </li>
+                            {% endif %}    
+                        </ul>
+                        {% if user_id %}
+                        <div class="navbar-buttons mbr-section-btn">
+                            <a class="btn btn-black-outline display-7" href="/user_dashboard">
+                            USER DASHBOARD</a>
+                        </div>
+                        {% else %}
+                        <div class="navbar-buttons mbr-section-btn">
+                            <a class="btn btn-black-outline display-7" href="/reg">
+                            REGISTER HERE</a>
+                        </div>
+                        {% endif %}  
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section data-bs-version="5.1" class="slider1 cid-sMGxXBCqoJ mbr-parallax-background" id="header3-3">
+
+        <div class="mbr-overlay"></div>
+
+        <div class="main-container col-12">
+            <div class="img-container col-12 col-lg-6">
+                <div class="item-img">
+                    <img src="../static/images/pexels-element-digital-1370295.jpg" alt="">
+                </div>
+            </div>
+            <div class="text-container col-12 col-lg-6">
+                <div class="text-wrap">
+                    <div class="col-12 main-text">
+                        <p class="mbr-text mbr-fonts-style text-with-round m-0 display-7">We Are&nbsp; Book Publisher</p>
+                        <h1 class="mbr-section-title mbr-fonts-style mb-3 title mt-2 display-1">Open New Perspective &amp; New Experience Just By One Books</h1>
+                        <div class="mbr-section-btn mt-3"><a class="btn btn-black-outline display-7" href="#">Lean more</a></div>
+                    </div>
+                    <p class="mbr-text mbr-fonts-style text mb-2 mt-2 display-7">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section data-bs-version="5.1" class="slider1 cid-sMGxJisN6d" id="contact4-2">
+
+
+
+        <div class="main-container col-12">
+            <div class="content col-12">
+                <p class="link link-left align-center mbr-fonts-style m-0 display-7"><a class="text-black underlined-link" href="#">CONTACT US</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="features12 cid-sMGGqhZsi6" id="features6-4">
+
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 text-container">
+                    <div class="card-wrapper">
+                        <div class="card-box align-left">
+                            <p class="mbr-text mbr-fonts-style text-with-round mb-3 display-7">
+                                OUR&nbsp; ADVICES</p>
+                            <h4 class="card-title mbr-fonts-style mb-0 display-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 cards-container">
+                    <div class="cars-content">
+                        <div class="item mbr-flex">
+                            <div class="numbering-container">
+                                <p class="numbering m-0 display-4"><strong>S</strong></p>
+                            </div>
+                            <div class="text-box">
+                                <h4 class="icon-title mbr-black mbr-fonts-style display-5">Satisfaction Guarantee</h4>
+                                <h5 class="icon-text mbr-black mbr-fonts-style display-7">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est enim a minim veniam, quis nostrud.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mbr-flex">
+                        <div class="cars-content">
+                            <div class="numbering-container">
+                                <p class="numbering m-0 display-4"><strong>M</strong></p>
+                            </div>
+                            <div class="text-box">
+                                <h4 class="icon-title mbr-black mbr-fonts-style display-5">Multi Language Support</h4>
+                                <h5 class="icon-text mbr-black mbr-fonts-style display-7">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est enim a minim veniam, quis nostrud.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mbr-flex">
+                        <div class="cars-content">
+                            <div class="numbering-container">
+                                <p class="numbering m-0 display-4"><strong>P</strong></p>
+                            </div>
+                            <div class="text-box">
+                                <h4 class="icon-title mbr-black mbr-fonts-style display-5">Professionals Staff</h4>
+                                <h5 class="icon-text mbr-black mbr-fonts-style display-7">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est enim a minim veniam, quis nostrud.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="slider1 cid-sMGHsZcTCS" id="header5-5">
+
+
+
+        <div class="main-container col-12 row-reverse">
+            <div class="text-container col-12 col-lg-6">
+                <div class="text-wrap">
+                    <div class="col-12 main-text">
+                        <div class="col-12">
+                            <p class="mbr-text mbr-fonts-style text-with-round m-0 display-7">
+                                ABOUT US</p>
+                            <h1 class="mbr-section-title mbr-fonts-style mb-3 title mt-2 display-2">Become The True Creator &amp; Open Your New World</h1>
+                            <p class="mbr-text mbr-fonts-style text mb-2 mt-2 display-7">
+                                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </p>
+                            <p class="link mbr-fonts-style align-left mt-4 mb-4 display-7"><a class="text-black underlined-link" href="#">READ MORE</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="link-wrap">
+                            <p class="link link-contacts mbr-fonts-style align-left mb-0 display-7"><a class="text-black underlined-link" href="#">ABOUT US</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container col-12 col-lg-6">
+                <div class="item-img">
+                    <div class="img">
+                        <img src="../static/images/pexels-rahul-pandit-1083633.jpeg" alt="">
+                    </div>
+                    <div class="img-text">
+
+
+                    </div>
+                </div>
+                <div class="item-info">
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section data-bs-version="5.1" class="features1 cid-sMGI17mos7 mbr-parallax-background" id="features5-6">
+
+
+        <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(0, 0, 0);">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-container">
+
+                    <h3 class="mbr-section-title mbr-fonts-style display-2">Get 10% Discount On Marketplace</h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 cards-container">
+                    <div class="card col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box">
+                                <div class="iconfont-wrapper">
+                                    <span class="mbr-iconfont mb-3 mobi-mbri-contact-form mobi-mbri" style="font-size: 65px; color: rgb(101, 147, 230); fill: rgb(101, 147, 230);"></span>
+                                </div>
+                                <h5 class="card-title mbr-fonts-style mb-3 display-2">4 532</h5>
+                                <p class="card-text mbr-fonts-style display-7">Successful Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box">
+                                <div class="iconfont-wrapper">
+                                    <span class="mbr-iconfont mb-3 mobi-mbri-users mobi-mbri" style="font-size: 65px; color: rgb(101, 147, 230); fill: rgb(101, 147, 230);"></span>
+                                </div>
+                                <h5 class="card-title mbr-fonts-style mb-3 display-2">2252</h5>
+                                <p class="card-text mbr-fonts-style display-7">Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box">
+                                <div class="iconfont-wrapper mb-3">
+                                    <span class="mbr-iconfont mb-3 mobi-mbri-user mobi-mbri" style="font-size: 65px; color: rgb(101, 147, 230); fill: rgb(101, 147, 230);"></span>
+                                </div>
+                                <h5 class="card-title mbr-fonts-style mb-3 display-2">57</h5>
+                                <p class="card-text mbr-fonts-style display-7">Professional&nbsp;<span style="font-size: 1rem; background-color: transparent;">Writer</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box">
+                                <div class="iconfont-wrapper">
+                                    <span class="mbr-iconfont mb-3 mobi-mbri-globe-2 mobi-mbri" style="font-size: 65px; color: rgb(101, 147, 230); fill: rgb(101, 147, 230);"></span>
+                                </div>
+                                <h5 class="card-title mbr-fonts-style mb-3 display-2">21</h5>
+                                <p class="card-text mbr-fonts-style display-7">Country</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="slider1 cid-sMGMHVnbX0" id="header5-7">
+
+
+
+        <div class="main-container col-12">
+            <div class="text-container col-12 col-lg-6">
+                <div class="text-wrap">
+                    <div class="col-12 main-text">
+                        <div class="col-12">
+                            <p class="mbr-text mbr-fonts-style text-with-round m-0 display-7">
+                                WHY CHOOSE US</p>
+                            <h1 class="mbr-section-title mbr-fonts-style mb-3 title mt-2 display-2">We Keep Making High Quality Book To Deserve for You</h1>
+                            <p class="mbr-text mbr-fonts-style text mb-2 mt-2 display-7">
+                                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </p>
+                            <p class="link mbr-fonts-style align-left mt-4 mb-4 display-7"><a class="text-black underlined-link" href="#">READ MORE</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="link-wrap">
+                            <p class="link link-contacts mbr-fonts-style align-left mb-0 display-7"><a class="text-black underlined-link" href="#">WHY CHOOSE US</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container col-12 col-lg-6">
+                <div class="item-img">
+                    <div class="img">
+                        <img src="../static/images/pexels-cottonbro-6344226.jpg" alt="">
+                    </div>
+                    <div class="img-text">
+
+
+                    </div>
+                </div>
+                <div class="item-info">
+
+                    <div class="mbr-section-btn mt-3"><a class="btn btn-black-outline display-7" href="#">Get Started</a></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section data-bs-version="5.1" class="features12 cid-sMGNLE5TbR" id="header6-8">
+
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 text-container">
+                    <h4 class="card-title align-center mbr-fonts-style display-1">Look Our Book Collection</h4>
+                    <p class="mbr-text mbr-fonts-style align-center display-7">
+                        Check out some of the projects that came out of<br> our creative workshops in the last few years.
+                    </p>
+                    <div class="iconfont-wrapper">
+                        <span class="mbr-iconfont mobi-mbri-down mobi-mbri mb-2" style="font-size: 30px; color: #3d3d3d; fill: #3d3d3d;"></span>
+                    </div>
+                    <div class="link-wrap">
+                        <p class="link link-contacts mbr-fonts-style align-left mb-0 display-7">
+                            <a class="emerging-underline-link" href="#">Science</a>
+                            <a class="emerging-underline-link" href="#">Management</a>
+                            <a class="emerging-underline-link" href="#">Fiction</a>
+                            <a class="emerging-underline-link" href="#">Science</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="slider1 cid-sMGO8mpbY0" id="gallery8-9">
+
+
+
+        <div class="main-container col-12">
+            <div class="card-container col-12 col-lg-6">
+                <div class="col-12 col-md-6 card">
+                    <div class="item-img">
+                        <img src="../static/images/pexels-aphiwat-chuangchoem-347226.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+
+                        <h5 class="item-title mbr-fonts-style mb-3 display-5">Book 1 : The Key of Succes.</h5>
+                    </div>
+                    <div class="link-wrap">
+                        <p class="link link-contacts mbr-fonts-style align-left mb-0 display-7">Andrey Robert<br><a class="text-black emerging-underline-link" href="#">About</a>&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 card">
+                    <div class="item-img">
+                        <img src="../static/images/pexels-spacex-23769.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+
+
+                        <h5 class="item-title mbr-fonts-style mb-3 display-5">Earth : Beyond The Universe</h5>
+                    </div>
+                    <div class="link-wrap">
+                        <p class="link link-contacts mbr-fonts-style align-left mb-0 display-7">Johnatan Grey<br><a class="text-black emerging-underline-link" href="#">About</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container col-12 col-lg-6">
+                <div class="col-12 col-md-6 card">
+                    <div class="item-img">
+                        <img src="../static/images/pexels-cottonbro-5185178.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+
+                        <h5 class="item-title mbr-fonts-style mb-3 display-5">Earth : Beyond The Universe</h5>
+                    </div>
+                    <div class="link-wrap">
+                        <p class="link link-contacts mbr-fonts-style align-left mb-0 display-7">Johnatan Grey<br><a class="text-black emerging-underline-link" href="#">About</a></p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 card">
+                    <div class="item-img">
+                        <img src="../static/images/pexels-pixabay-209861.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+
+
+                        <h5 class="item-title mbr-fonts-style mb-3 display-5">World Biggest Football History</h5>
+                    </div>
+                    <div class="link-wrap">
+                        <p class="link link-contacts mbr-fonts-style align-left mb-0 display-7">Billy Johnatan<br><a class="text-black emerging-underline-link" href="#">About</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section data-bs-version="5.1" class="slider2 cid-sMGQ0Uxayw" id="slider4-a">
+
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 carousel-container">
+                    <div class="label align-center">
+                        <p class="mbr-text mbr-fonts-style text-with-round label m-0 display-7">
+                            TESTIMONIALS
+                        </p>
+                    </div>
+                    <div class="carousel slide" id="sPtrD7YVzz" data-ride="carousel" data-bs-ride="carousel" data-interval="3000" data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item slider-image item active">
+                                <div class="item-wrap">
+                                    <div class="carousel-caption d-md-block">
+                                        <h5 class="mbr-section-subtitle mbr-fonts-style display-5">
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </h5>
+                                        <p class="mbr-section-text mbr-fonts-style display-7">
+                                            Tyler Brown - Businessman</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item slider-image item">
+                                <div class="item-wrap">
+                                    <div class="carousel-caption d-md-block">
+                                        <h5 class="mbr-section-subtitle mbr-fonts-style display-5">
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </h5>
+                                        <p class="mbr-section-text mbr-fonts-style display-7">
+                                            Josh Allen - Entrepreneur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item slider-image item">
+                                <div class="item-wrap">
+                                    <div class="carousel-caption d-md-block">
+                                        <h5 class="mbr-section-subtitle mbr-fonts-style display-5">
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </h5>
+                                        <p class="mbr-section-text mbr-fonts-style display-7">
+                                            William Miller - CEO&nbsp;Bciaga</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#sPtrD7YVzz">
+                        <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Previous</span>
+                    </a>
+                        <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#sPtrD7YVzz">
+                        <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Next</span>
+                    </a>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#sPtrD7YVzz" data-bs-target="#sPtrD7YVzz"></li>
+                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#sPtrD7YVzz" data-bs-target="#sPtrD7YVzz"></li>
+                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#sPtrD7YVzz" data-bs-target="#sPtrD7YVzz"></li>
+                    </ol>
+                </div>
+                <div class="col-12 col-lg-8 img-container">
+                    <div class="item-img">
+                        <img src="../static/images/pexels-element-digital-1370295.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="slider1 cid-sMGQqTgwi5" id="contact2-b">
+
+
+
+        <div class="main-container col-12">
+            <div class="content content-left ali col-4">
+                <p class="mbr-text mbr-fonts-style big-text big-text-left m-0 display-7">
+                    U
+                </p>
+            </div>
+            <div class="content content-center col-4">
+                <div class="item-img">
+                    <img src="../static/images/pexels-rahul-pandit-1083633.jpg" alt="">
+                </div>
+                <p class="link mbr-fonts-style align-center mt-3 mb-3 display-4"><a class="text-black underlined-link" href="#">Contact us</a>
+                </p>
+            </div>
+            <div class="content content-right col-4">
+                <p class="mbr-text mbr-fonts-style big-text big-text-right m-0 display-7">
+                    S
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="footer3 cid-sN3kELS42p" once="footers" id="footer3-c">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row mbr-white">
+                <div class="col-12 wrapper">
+                    <div class="copyright">
+                        <p class="mbr-text mb-0 mbr-fonts-style copyright display-7">
+                            © Copyright 2025 Mobirise - All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="produced">
+                        <p class="mbr-text mb-0 mbr-fonts-style produced align-right display-7">
+                            Powered by Mobirise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/parallax/jarallax.js"></script>
+    <script src="../static/smoothscroll/smooth-scroll.js"></script>
+    <script src="../static/ytplayer/index.js"></script>
+    <script src="../static/dropdown/js/navbar-dropdown.js"></script>
+    <script src="../static/theme/js/script.js"></script>
+
+
+
+</body>
+
+</html>

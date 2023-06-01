@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ user.name.capitalize }}!</h1>
+    
+    <h2>Purchased Books</h2>
+    {% if purchased_books %}
+        <ul>
+            {% for book in purchased_books %}
+                <li>Name:{{ book.bname }}</li>
+                <li>Quantity:{{ book.quantity }}</li><br>
+                <br>
+                <br>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No purchased books found.</p>
+    {% endif %}
+
+<h1>Hello,{{user.name}}.You can edit your details here!</h1>
+<a href="/edit?id={{al.id}}">click to edit</a>"
+</body>
+</html>

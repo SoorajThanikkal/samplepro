@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+</head>
+<body>
+    <h1>Thank you for your purchase</h1>
+
+    {% if book %}
+        <p>Book: {{ book.bname }}</p>
+        <p>Quantity: {{ quantity }}</p>
+        <p>Total Price: ${{ total_price }}</p>
+    {% endif %}
+    <p></p>
+	<button class="home"> <a href="/index">Return To Home</a></button>
+</body>
+</html>

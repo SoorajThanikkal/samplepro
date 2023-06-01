@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Buy</title>
+</head>
+<body>
+    <h1>Book Buy</h1>
+
+    {% for book in books %}
+    <div class="book">
+        <h2>{{ book.bname }}</h2>
+        <p>Author: {{ book.author }}</p>
+        <p>Price: ${{ book.price }}</p>
+        <p>Quantity: {{ book.quantity }}</p>
+
+        <form method="post" action="{% url 'bookbuy' %}">
+            {% csrf_token %}
+            <input type="hidden" name="book" value="{{ book.id }}">
+            {% if user_id  %}
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="{{ book.quantity }}">
+            <button type="submit">Buy</button>
+            {% else %}
+            <button><a href="/reg">please register for buy product</a></button>
+            {% endif %}
+        </form>
+    </div>
+    {% endfor %}
+</body>
+</html>

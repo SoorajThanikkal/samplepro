@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function setQuantity(upordown) {
+            var quantity = document.getElementById('quantity');
+
+            if (quantity.value > 1) {
+                if (upordown == 'up') {
+                    --document.getElementById('quantity').value;
+                } else if (upordown == 'down') {
+                    --document.getElementById('quantity').value;
+                }
+            } else if (quantity.value == 1) {
+                if (upordown == 'up') {
+                    --document.getElementById('quantity').value;
+                }
+            } else {
+                document.getElementById('quantity').value = 1;
+            }
+        }
+    </script>
+    {% if book %}
+    <ul>
+        <li type="hidden">{{ book.id }}</li>
+        <li>{{ book.bname }}</li>
+        <li>{{ book.about }}</li>
+        <li>{{ book.author }}:</li>
+    </ul>
+    <div class="order-option">
+        <span id="myform">
+            <!-- the code for adjusting  Quantity -->
+            <!-- <button class="qty qtyminus" onclick="setQuantity('down');">-</button>
+            <input class="quantity" type="number" name="qty" id="quantity" value="1" min="1">
+            <button class="qty qtyplus" onclick="setQuantity('up');">+</button><br> -->
+            <button class="buy"> <a href="/bookbuy?book_id={{ book.id }}&qty={{ book.quantity }}">Buy</a></button>
+        </span>
+    </div>
+    {% endif %}
+    <style>
+        #myform {
+            text-align: center;
+            padding: 5px;
+            margin: 2%;
+        }
+        .quantity {
+            width: 40px;
+            height: 25px;
+            text-align: center;
+        }
+        .buy {
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            margin: 3%;
+            text-align: center;
+        }
+        input.qtyplus {
+            width: 25px;
+            height: 25px;
+        }
+        input.qtyminus {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</body>
+</html>
