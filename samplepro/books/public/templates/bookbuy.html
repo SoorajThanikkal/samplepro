@@ -15,17 +15,17 @@
         <p>Author: {{ book.author }}</p>
         <p>Price: ${{ book.price }}</p>
         <p>Quantity: {{ book.quantity }}</p>
-
-        <form method="post" action="{% url 'bookbuy' %}">
+        <form method="POST" action="/bookbuy/">
             {% csrf_token %}
             <input type="hidden" name="book" value="{{ book.id }}">
-            {% if user_id  %}
+            {% if user_id %}
             <label for="quantity">Quantity:</label>
             <input type="number" name="quantity" id="quantity" min="1" max="{{ book.quantity }}">
             <button type="submit">Buy</button>
             {% else %}
-            <button><a href="/reg">please register for buy product</a></button>
+            <button><a href="/reg">plaese register</a></button>
             {% endif %}
+            
         </form>
     </div>
     {% endfor %}

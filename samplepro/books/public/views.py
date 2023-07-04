@@ -40,7 +40,7 @@ def log(request):
             if us>0: 
                 usDtl=Register.objects.filter(name=request.POST.get('name'),password=request.POST.get('password'),user_grand='Grand')
                 request.session["uid"]=usDtl[0].id
-                return render(request,'index.html')
+                return index(request)
             else:
                 return render(request,'failed.html')
         else:
@@ -123,8 +123,8 @@ def bookbuy(request):
         quantities = request.POST.getlist('quantity')
         user_id = request.session.get("uid")
         user = get_object_or_404(Register, id=user_id)
-
-        for book_id, quantity in zip(selected_books, quantities):
+ 
+            for book_id, quantity in zip(selected_books, quantities):
             book = get_object_or_404(Books, id=book_id)
             quantity = int(quantity)
 
@@ -141,15 +141,14 @@ def bookbuy(request):
                 buyBook = Buyer(name=user, bname=book,quantity=quantity)
                 buyBook.save()
 
-
         return render(request, 'buy.html', {
             'book': book,
             'quantity': quantity,
             'total_price': total_price,
-            
+              
         })
     else:
-        books = Books.objects.all()
+        books = Books.objects.all()   
         return render(request, 'bookbuy.html', {'books': books})   
 
 def success(request):
@@ -159,7 +158,7 @@ def success(request):
     context = {
         'book': book,
     }
-    return render(request, 'success.html', context)
+    return render(request, 'success.html', context)              
 
 
 
@@ -193,4 +192,10 @@ def edit_password(request):
         return redirect('user_dashboard')
     else:
         return render(request, 'edit_password.html')
+
+
+
+
+def Pro_fail(request):
+    return render(request,'purchase_failed.html')        
 

@@ -34,6 +34,7 @@ urlpatterns = [
     path('buy', views.buy),
     path('bookbuy/', views.bookbuy, name='bookbuy'),
     path('success', views.success),
+    path('Pro_fail', views.Pro_fail),
     path('user_dashboard/', views.user_dashboard, name='user_dashboard'),
     path('edit_password/', views.edit_password, name='edit_password'),
   
